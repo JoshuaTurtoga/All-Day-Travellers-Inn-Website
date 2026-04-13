@@ -1,0 +1,10 @@
+{
+  "name": "all-day-travellers-inn-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix all-day-travellers-inn-website run dev",
+    "build": "npm --prefix all-day-travellers-inn-website run build",
+    "preview": "npm --prefix all-day-travellers-inn-website run preview",
+    "lint": "npm --prefix all-day-travellers-inn-website run lint"
+  }
+}
