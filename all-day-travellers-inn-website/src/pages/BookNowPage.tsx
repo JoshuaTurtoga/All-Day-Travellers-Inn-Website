@@ -125,7 +125,8 @@ export default function BookNowPage() {
     if (roomError) throw roomError
     if (!rooms || rooms.length === 0) return null
 
-    const roomIds = rooms.map((room) => room.id)
+    const typedRooms = (rooms ?? []) as RoomRow[]
+    const roomIds = typedRooms.map((room) => room.id)
 
     const { data: conflictingBookings, error: bookingError } = await supabase
       .from('bookings')
